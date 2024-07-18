@@ -13,13 +13,11 @@ const Container = styled.div`
   padding: 10px 0;
 `;
 
-function Announcement() {
+const FooterEnd = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <Container>
-      Enjoy 50% off on all items plus free shipping on orders over $50 at Urban
-      Threads 🚀
-    </Container>
+    <Container>© {currentYear} Urban Threads. All rights reserved.</Container>
   );
-}
+};
 
-export default Announcement;
+export default FooterEnd;
