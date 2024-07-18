@@ -22,7 +22,7 @@ export const sliderItems = [
     img: coupleImage3,
     title: "LOUNGEWEAR LOVE",
     desc: "RELAX IN STYLE WITH OUR LOUNGEWEAR LOVE COLLECTION! COMFORT AND FASHION COMBINED.",
-    bg: "ece4db",
+    bg: "f5fafd",
   },
 ];
 
