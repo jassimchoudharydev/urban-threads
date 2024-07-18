@@ -46,7 +46,7 @@ const Right = styled.div`
   justify-content: flex-end;
 `;
 const MenuItem = styled.div`
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   margin-left: 25px;
 `;
@@ -56,10 +56,10 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
+          <Language>EN 🇬🇧</Language>
           <SearchContainer>
             <Input />
-            <SearchIcon style={{ color: "gray", fontSize: 16 }} />
+            <SearchIcon style={{ color: "gray", fontSize: 20 }} />
           </SearchContainer>
         </Left>
         <Center>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>LOGIN</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
+            <Badge badgeContent={4} color="success">
               <ShoppingCartOutlinedIcon color="action" />
             </Badge>
           </MenuItem>
