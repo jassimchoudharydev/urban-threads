@@ -5,6 +5,8 @@ const dns = require("dns");
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const PORT = process.env.PORT || 5001;
 const userRoute = require("./routes/user");
+const authRoute = require("./routes/auth");
+const productRoute = require("./routes/product");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -18,6 +20,8 @@ mongoose
 app.use(express.json());
 
 app.use("/api/users", userRoute);
+app.use("/api/auth", authRoute);
+app.use("/api/products", productRoute);
 
 app.listen(PORT, () => {
   console.log("Backend server is running.");
